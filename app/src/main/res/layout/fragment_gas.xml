@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".controllers.GasFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/typeOfSensor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/IntGas"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:textSize="18sp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/gas_slider"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="100dp"
+        android:valueFrom="0"
+        android:valueTo="11"
+        android:value="0">
+
+    </com.google.android.material.slider.Slider>
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/gasSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="120dp"
+        android:checked="false"
+        android:text="Send Data"
+        android:textOff="Off"
+        android:textOn="On">
+
+    </com.google.android.material.switchmaterial.SwitchMaterial>
+
+
+</LinearLayout>

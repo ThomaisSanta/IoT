@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditTextPreference
+        android:dialogMessage="ID must be a number"
+        android:persistent="true"
+        app:defaultValue="-1"
+        app:key="clientSessionId"
+        app:title="@string/UniqueSessionId"
+        app:useSimpleSummaryProvider="true" />
+    <EditTextPreference
+        android:key="server_port"
+        android:persistent="true"
+        android:title="Server Port"
+        app:defaultValue="@string/defaultServerPort"
+        app:useSimpleSummaryProvider="true" />
+    <EditTextPreference
+        android:key="server_ip"
+        android:persistent="true"
+        android:title="@string/setServerIp"
+        app:defaultValue="@string/defaultServerIPAddress"
+        app:useSimpleSummaryProvider="true" />
+    <SwitchPreference
+        android:key="auto_mode"
+        android:defaultValue="false"
+        android:title="@string/auto_mode"
+        android:summary="@string/auto_mode_description"/>
+    <ListPreference
+        android:key="manual_mode"
+        android:defaultValue="1"
+        android:dialogTitle="@string/choose_pair"
+        android:entries="@array/location_coordinates"
+        android:entryValues="@array/location_number"
+        android:title="@string/manual_mode"
+        android:summary="Choose a pair of location coordinates"/>
+
+</PreferenceScreen>
