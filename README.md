@@ -1,6 +1,3 @@
-# MobileApplication
-
-
 
 ## Getting started
 
